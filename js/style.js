@@ -11,6 +11,8 @@ $(function(){
     $('#dowebok').fullpage({
         verticalCentered: !1,
         navigation: !0,
+        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fivePage','lastPage'],
+        menu: '#myMenu',
         afterLoad: function(anchorLink, index){
             var loadedSection = $(this);
             //using index
