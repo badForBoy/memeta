@@ -64,7 +64,8 @@ p{font-size: 1.4rem;line-height: 1.6;}
 #fivePage .container .wrap img{left: 0;}
 
 #sixPage{text-align: center;}
-#sixPage h3{margin-bottom: 0;color: #949494;font-size: 24px;}
-#sixPage p{font-size: 14px;}
+#sixPage h3{margin-bottom: 20px;color: #515151;font-size: 24px;}
+#sixPage p{font-size: 14px;color: #515151;}
 #sixPage .app{height: 70%;box-sizing: border-box;padding-top: 176px;}
-#sixPage .company{height: 30%;background: #333;}
+#sixPage .company{height: 30%;background: #333;padding-top: 70px;box-sizing: border-box;}
+#sixPage .company p a{padding: 0 6px;color: #515151;}
