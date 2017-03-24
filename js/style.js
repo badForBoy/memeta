@@ -27,6 +27,7 @@ $(function(){
                 $(".header ul li").eq(3).find('.box span').animate({left:'0'},300,function(){
                     $(".header ul li a").animate({bottom:0}, 300)
                 })
+                $(".header ul li").eq(4).find('.box span').animate({right:'0'},300)
     		})
     	} else{
             $(".header ul li a").animate({bottom:'-10'}, 300,function(){
@@ -36,12 +37,14 @@ $(function(){
                     $(".header").animate({right:'-100%'}, 300)
                 })
                 $(".header ul li").eq(3).find('.box span').animate({left:'-100%'},300)
+                $(".header ul li").eq(4).find('.box span').animate({right:'-100%'},300)
             })
     	}
     });
 
     $(".header ul li a").click(function(event) {
         $(".header ul li a").animate({bottom:'-10'}, 300,function(){
+            $(".header ul li").eq(4).find('.box span').animate({right:'-100%'},300)
             $(".header ul li").eq(0).find('.box span').animate({right:'-100%'},300)
             $(".header ul li").eq(1).find('.box span').animate({left:'-100%'},300)
             $(".header ul li").eq(2).find('.box span').animate({right:'-100%'},300)
