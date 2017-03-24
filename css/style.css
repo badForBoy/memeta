@@ -38,7 +38,7 @@ p{font-size: 1.4rem;line-height: 1.6;}
 .section{background: #f3f3f3;overflow: hidden;}
 .section .container{height: 100%;position: relative;}
 .section .container .wrap{float: left;width: 40%;height: 100%;position: relative;}
-.section .container .title{float: left;width: 60%;padding-top: 15%;box-sizing: border-box;padding-left: 40px;}
+.section .container .title{position: relative;float: left;width: 60%;box-sizing: border-box;top: 50%; margin-top: -100px;}
 .section .container .wrap img{position: absolute;bottom: 0;height: 80%;box-shadow: 0 11px 35px 0 rgba(7,17,27,.2);right: 0;}
 
 #firstPage{background: url(../img/banner.jpg);background-size: cover;background-position: center;position: relative;}
@@ -47,7 +47,7 @@ p{font-size: 1.4rem;line-height: 1.6;}
 
 #secondPage{background: #fff;overflow: hidden;}
 #secondPage .container{height: 100%;position: relative;}
-#secondPage .container .title{float: left;width: 60%;padding-top: 15%;}
+#secondPage .container .title{float: left;width: 60%;padding-left: 40px;}
 #secondPage .container .wrap img{position: absolute;bottom: 0;height: 80%;}
 /* #secondPage .wrap img{transform: perspective(600px) translateZ(0px);-webkit-transform: perspective(600px) translateZ(-50px);transition: transform 10s;}
 #secondPage .wrap.move img{transform: perspective(600px) translateZ(30px);-webkit-transform: perspective(600px) translateZ(10px);} */
@@ -57,6 +57,7 @@ p{font-size: 1.4rem;line-height: 1.6;}
 #thirdPage .container .wrap img{left: 0;}
 
 #fourthPage{}
+#fourthPage .container .title{float: left;width: 60%;padding-left: 40px;}
 
 #fivePage{background: #fff;overflow: hidden;}
 #fivePage .container .title{text-align: right;padding-right:40px;}
