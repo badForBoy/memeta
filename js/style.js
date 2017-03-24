@@ -6,8 +6,8 @@ $(function(){
     $("#thirdPage .title").css({left: '-500px'});
     $("#fourthPage .wrap").css({left: '-500px'});
     $("#fourthPage .title").css({right: '-500px'});
-    $("#fivePage .wrap").css({left: '-500px'});
-    $("#fivePage .title").css({right: '-500px'});
+    $("#fivePage .wrap").css({left: '-800px'});
+    $("#fivePage .title").css({right: '-800px'});
     $('#dowebok').fullpage({
         verticalCentered: !1,
         navigation: !0,
@@ -28,8 +28,8 @@ $(function(){
             else if (index == 3) {
                 $("#thirdPage .wrap").animate({right: 0}, 500)
                 $("#thirdPage .title").animate({left: 0}, 500)
-                $("#secondPage .wrap").animate({right: -400}, 500)
-                $("#secondPage .title").animate({left: -400}, 500)
+                $("#secondPage .wrap").animate({right: -800}, 500)
+                $("#secondPage .title").animate({left: -800}, 500)
                 $(".mun span").css({background: '#9b9b9b'});
             }
             else if (index == 4) {
@@ -42,13 +42,13 @@ $(function(){
             else if (index == 5) {
                 $("#fivePage .wrap").animate({left: 0}, 500)
                 $("#fivePage .title").animate({right: 0}, 500)
-                $("#fourthPage .wrap").animate({left: -400}, 500)
-                $("#fourthPage .title").animate({right: -400}, 500)
+                $("#fourthPage .wrap").animate({left: -800}, 500)
+                $("#fourthPage .title").animate({right: -800}, 500)
                 $(".mun span").css({background: '#9b9b9b'});
             }
             else if (index == 6) {
-                $("#fivePage .wrap").animate({left: -400}, 500)
-                $("#fivePage .title").animate({right: -400}, 500)
+                $("#fivePage .wrap").animate({left: -800}, 500)
+                $("#fivePage .title").animate({right: -800}, 500)
                 $(".mun span").css({background: '#9b9b9b'});
             }
         }
@@ -87,6 +87,7 @@ $(function(){
     $(".header ul li").click(function(event) {
         var $height = $("#firstPage").height();
         var n = $(this).index();
+        //$("html,body").animate({ scrollTop: $height*(n+1)}, 500); 
         $(".header ul li a").animate({bottom:'-10'}, 300,function(){
             $(".header ul li").eq(4).find('.box span').animate({right:'-100%'},300)
             $(".header ul li").eq(0).find('.box span').animate({right:'-100%'},300)
