@@ -37,7 +37,7 @@ img{
 
 #secondPage{background: #fff;overflow: hidden;}
 #secondPage .container{height: 100%;position: relative;}
-#secondPage .container .wrap img{position: absolute;bottom: 0;}
+#secondPage .container .wrap img{position: absolute;bottom: 0;height: 100%;}
 /* #secondPage .wrap img{transform: perspective(600px) translateZ(0px);-webkit-transform: perspective(600px) translateZ(-50px);transition: transform 10s;}
 #secondPage .wrap.move img{transform: perspective(600px) translateZ(30px);-webkit-transform: perspective(600px) translateZ(10px);} */
 
