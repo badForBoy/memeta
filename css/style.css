@@ -37,9 +37,9 @@ p{font-size: 1.4rem;line-height: 1.6;}
 
 .section{background: #f3f3f3;overflow: hidden;}
 .section .container{height: 100%;position: relative;}
-.section .container .wrap{float: left;width: 40%;height: 200px;}
+.section .container .wrap{float: left;width: 40%;height: 100%;position: relative;}
 .section .container .title{float: left;width: 60%;padding-top: 15%;box-sizing: border-box;padding-left: 40px;}
-.section .container .wrap img{position: absolute;bottom: 0;height: 100%;}
+.section .container .wrap img{position: absolute;bottom: 0;height: 80%;box-shadow: 0 11px 35px 0 rgba(7,17,27,.2);right: 0;}
 
 #firstPage{background: url(../img/banner.jpg);background-size: cover;background-position: center;position: relative;}
 #firstPage .bg{width: 100%;height: 100%;background: #000;opacity: 0.65;filter:alpha(opacity=65);position: absolute;z-index: 8}
@@ -47,16 +47,17 @@ p{font-size: 1.4rem;line-height: 1.6;}
 
 #secondPage{background: #fff;overflow: hidden;}
 #secondPage .container{height: 100%;position: relative;}
-#secondPage .container .wrap{float: left;width: 40%;height: 200px;}
 #secondPage .container .title{float: left;width: 60%;padding-top: 15%;}
-#secondPage .container .wrap img{position: absolute;bottom: 0;height: 100%;}
+#secondPage .container .wrap img{position: absolute;bottom: 0;height: 80%;}
 /* #secondPage .wrap img{transform: perspective(600px) translateZ(0px);-webkit-transform: perspective(600px) translateZ(-50px);transition: transform 10s;}
 #secondPage .wrap.move img{transform: perspective(600px) translateZ(30px);-webkit-transform: perspective(600px) translateZ(10px);} */
 
 #thirdPage{}
-#thirdPage .container .title{text-align: right;}
+#thirdPage .container .title{text-align: right;padding-right:40px;}
+#thirdPage .container .wrap img{left: 0;}
 
 #fourthPage{}
 
 #fivePage{background: #fff;overflow: hidden;}
-#fivePage .container .title{text-align: right;}
+#fivePage .container .title{text-align: right;padding-right:40px;}
+#fivePage .container .wrap img{left: 0;}
