@@ -28,8 +28,8 @@ $(function(){
             else if (index == 3) {
                 $("#thirdPage .wrap").animate({right: 0}, 500)
                 $("#thirdPage .title").animate({left: 0}, 500)
-                $("#secondPage .wrap").animate({left: -400}, 500)
-                $("#secondPage .title").animate({right: -400}, 500)
+                $("#secondPage .wrap").animate({right: -400}, 500)
+                $("#secondPage .title").animate({left: -400}, 500)
                 $(".mun span").css({background: '#9b9b9b'});
             }
             else if (index == 4) {
