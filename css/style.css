@@ -1,0 +1,40 @@
+body, div, h1, h2, h3, h4, h5, h5, p, ul, ol, li, dl, dt, dd { margin: 0; padding: 0;}
+ul, ol { list-style-type: none;}
+*{padding: 0;margin: 0;}
+html,body{height: 100%;}
+
+body { font: 14px "Microsoft Yahei",Arial,Helvetica,sans-serif; color: #515151;font-size: 62.5%;}
+a { color: #949494; text-decoration: none;}
+a:hover { color: #c34042;}
+img{
+	border: none;
+	/* width: 100%; */ 
+}
+#fp-nav li .active span, .fp-slidesNav .active span{color: #fff;background: #fff;}
+#fp-nav span, .fp-slidesNav span{border: 1px solid #fff;}
+.container{width: 1600px;margin: 0 auto;}
+
+.mun{position: fixed;z-index: 999;width: 80px;height: 80px;top: 20px;right: 20px;cursor: pointer;}
+.mun span{display:block;width: 60px;height: 4px;background: #fff;margin: 0 auto;margin: 20px 0;transform-origin:78% 50%;transform: rotate(0deg); transition: all .6s;}
+.mun.move span:nth-child(1){transform: rotate(-45deg); transition: all .6s;}
+.mun.move span{transform: rotate(45deg); } 
+
+.header{width: 100%;height: 100%;background: #1c1d24;position: fixed;right: -100%;z-index: 99;}
+.header ul{box-sizing: border-box;padding-top: 160px;width: 220px;margin: 0 auto;text-align: center;}
+.header ul li{cursor: default;height: 68px;line-height: 68px;}
+.header ul li a{font-size: 24px;position: relative;bottom: -10px;}
+.header ul li .box{overflow: hidden;width: 100%;height: 1px;}
+.header ul li .box span{position: relative;display: block;width: 100%;height: 1px;background: #949494;}
+.header ul li:nth-child(even) .box span{left: -100%;}
+.header ul li:nth-child(odd) .box span{right: -100%;}
+.header .nav .mun{position: absolute;width: 90px;height: 90px;right: 20px;top: 20px;cursor: pointer;}
+
+#firstPage{background: url(../img/bg_1.jpg);background-size: cover;background-position: center;}
+#firstPage .wrap img{transform: perspective(600px) translateZ(0px);-webkit-transform: perspective(600px) translateZ(-50px);transition: transform 10s;}
+#firstPage .wrap.move img{transform: perspective(600px) translateZ(30px);-webkit-transform: perspective(600px) translateZ(10px);}
+
+#secondPage{background: #25c4b1}
+
+#thirdPage{background: #fe7260}
+
+#fourthPage{background: #34d37c;}
