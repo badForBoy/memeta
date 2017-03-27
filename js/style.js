@@ -1,13 +1,13 @@
 $(function(){
 	var n;
-    $("#secondPage .wrap").css({right: '-500px'});
-    $("#secondPage .title").css({left: '-500px'});
-    $("#thirdPage .wrap").css({right: '-500px'});
-    $("#thirdPage .title").css({left: '-500px'});
-    $("#fourthPage .wrap").css({left: '-500px'});
-    $("#fourthPage .title").css({right: '-500px'});
-    $("#fivePage .wrap").css({left: '-800px'});
-    $("#fivePage .title").css({right: '-800px'});
+    $(".second .wrap").css({right: '-500px'});
+    $(".second .title").css({left: '-500px'});
+    $(".third .wrap").css({right: '-500px'});
+    $(".third .title").css({left: '-500px'});
+    $(".fourth .wrap").css({left: '-500px'});
+    $(".fourth .title").css({right: '-500px'});
+    $(".five .wrap").css({left: '-800px'});
+    $(".five .title").css({right: '-800px'});
     $('#dowebok').fullpage({
         verticalCentered: !1,
         navigation: !0,
@@ -17,40 +17,42 @@ $(function(){
             var loadedSection = $(this);
             //using index
             if(index == 1){
-                $("#firstPage .wrap").addClass('move');
+                //debugger
+                $(".first .wrap").addClass('move');
                 $(".mun span").css({background: '#fff'});
             } /*else{
                 $(".mun span").css({background: '#9b9b9b'});
             }*/
             else if (index == 2) {
-                $("#secondPage .wrap").animate({right: 0}, 500)
-                $("#secondPage .title").animate({left: 0}, 500)
+                //debugger
+                $(".second .wrap").animate({right: 0}, 500)
+                $(".second .title").animate({left: 0}, 500)
                 $(".mun span").css({background: '#9b9b9b'});
             }
             else if (index == 3) {
-                $("#thirdPage .wrap").animate({right: 0}, 500)
-                $("#thirdPage .title").animate({left: 0}, 500)
-                $("#secondPage .wrap").animate({right: -800}, 500)
-                $("#secondPage .title").animate({left: -800}, 500)
+                $(".third .wrap").animate({right: 0}, 500)
+                $(".third .title").animate({left: 0}, 500)
+                $(".second .wrap").animate({right: -800}, 500)
+                $(".second .title").animate({left: -800}, 500)
                 $(".mun span").css({background: '#9b9b9b'});
             }
             else if (index == 4) {
-                $("#fourthPage .wrap").animate({left: 0}, 500)
-                $("#fourthPage .title").animate({right: 0}, 500)
-                $("#thirdPage .wrap").animate({right: -400}, 500)
-                $("#thirdPage .title").animate({left: -400}, 500)
+                $(".fourth .wrap").animate({left: 0}, 500)
+                $(".fourth .title").animate({right: 0}, 500)
+                $(".third .wrap").animate({right: -400}, 500)
+                $(".third .title").animate({left: -400}, 500)
                 $(".mun span").css({background: '#9b9b9b'});
             }
             else if (index == 5) {
-                $("#fivePage .wrap").animate({left: 0}, 500)
-                $("#fivePage .title").animate({right: 0}, 500)
-                $("#fourthPage .wrap").animate({left: -800}, 500)
-                $("#fourthPage .title").animate({right: -800}, 500)
+                $(".five .wrap").animate({left: 0}, 500)
+                $(".five .title").animate({right: 0}, 500)
+                $(".fourth .wrap").animate({left: -800}, 500)
+                $(".fourth .title").animate({right: -800}, 500)
                 $(".mun span").css({background: '#9b9b9b'});
             }
             else if (index == 6) {
-                $("#fivePage .wrap").animate({left: -800}, 500)
-                $("#fivePage .title").animate({right: -800}, 500)
+                $(".five .wrap").animate({left: -800}, 500)
+                $(".five .title").animate({right: -800}, 500)
                 $(".mun span").css({background: '#9b9b9b'});
             }
         }
